@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.banner{  
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),url("images/background21.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative; 
+}
+
+.navbar{
+    /*height: 12%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 8%;
+    background-color: #101314;
+    opacity: 0.8;*/
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.logonaslov{
+    display: inline-block;
+}
+
+.logo{
+    position: absolute;
+    width: 80px;
+    height: 55px;
+    left: 80px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.bhtourism{
+    color: #008000;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 36px;
+    margin-left: 100px;
+    margin-right: auto;
+    cursor: pointer;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    background: linear-gradient(to right, #ffffff 50%, #008000 50%, #008000);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+/*nav ul li a:hover{
+    color: #008000;
+    transition: 1s;
+}*/
+  nav ul li a:hover {
+    background-position: -100%;
+}
+
+.tekst{
+    color:#ffffff;
+    position: absolute;
+    width: 624px;
+    height: 150px;
+    left: 59px;
+    top: calc(50% - 150px/2 - 81px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.vektor{
+    position: absolute;
+    left: 59px;
+    top: 490px;
+    height: 27px;
+}
+
+.hr{
+    color:#AFAFAF;
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    left: 95px;
+    top: 486px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 36px;
+}
+
+.naslov{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.clanak{
+    position: absolute;
+    left: 59px;
+    right: 59px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.info{
+    background: #121212;
+    margin-top: 260px;
+    
+}
+.info h1{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    padding: 40px 0;
+}
+
+.user .adress{
+    display: inline-block;
+}
+
+
+                /* USER */
+.user{
+
+    display: flex;
+    margin-left: -50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imam{
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.ime{
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+               /* ADRESA */
+
+.adress{
+    display: flex;
+    margin-left: 50%;
+    margin-top: -166.5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adresa{
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.ulica{
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+               /* E-Mail */
+
+.email{
+    display: flex;
+    margin-left: -50%;
+    margin-top: 4%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail{
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.e-posta{
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+               /* GODINA IZGRADNJE */
+
+.izgradnja{
+    display: flex;
+    margin-left: 50%;
+    margin-top: -158px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.god-izgradnje{
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.godina{
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.galerija{
+    color: #000000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+
+.horizontalna{
+    position: absolute;
+    width: 425px;
+    height: 619px;
+    left: 52px;
+    margin-top: 30px;
+}
+
+.row{
+    display: flex;
+    position: absolute;
+    margin: 0 500px;
+    margin-top: 26px;
+    margin-left:500px;
+}
+
+.column{
+    flex: 1;
+    padding: 5px;
+    width: 461px;
+    height: 308px;
+}
+
+.row2{
+    display: flex;
+    position: absolute;
+    margin: 0 500px;
+    margin-top: 348px;
+    margin-left:500px;
+}
+
+.prva, .druga, .treca, .cetvrta, .peta, .sesta{
+    width: 450px;
+    height: 288px;
+}
+
+.footer{
+    position: sticky;
+    top: 100%;
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.footer p{
+    display: flex;
+    color: #fff;
+    max-width: 350px;
+    text-align: left;
+}
+
+.socials::before{
+    content: '';
+    position: absolute;
+    display: flex;
+    top: 180px;
+    margin-right: 385px;
+    margin-left: 385px;
+    border-top: 1px solid #fff;
+    width: 1224px;
+}
+
+.text1, .text2, .text3{
+    padding: 40px;
+    display: inline-block;
+}
+
+.footer-naslov1, .footer-naslov2, .footer-naslov3{
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 650;
+}
+
+.footer-tekst1, .footer-tekst2, .footer-tekst3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+.socials{
+    display:flex;
+    justify-content: center;
+}
+
+.socials a i{
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright p{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.designer{
+    color: white;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    margin: 0 5px;
+    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    -webkit-mask-size: 800%;
+    mask-size: 800%;
+    -webkit-mask-position: 0;
+    mask-position: 0
+}
+
+.designer:hover {
+    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) 
+{
+    .tekst{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .vektor{
+        top: 400px;
+    }
+
+    .hr{
+        top: 396px;
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .logo{
+        width: 70px;
+        height: 45px;
+        left: 60px;
+    }
+
+    .bhtourism{
+        font-size: 22px;
+        line-height: 36px;
+        margin-left: 115px;
+        margin-bottom: 6px;
+    }
+
+    .naslov{
+        font-size: 44px;
+    }
+    
+
+    .clanak{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .info h1{
+        font-size: 44px;
+    }
+
+    .imam, .adresa, .mail, .god-izgradnje{
+        font-size: 18px;
+    }
+    
+    .ime, .ulica, .godina{
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .e-posta{
+        font-size: 16px;
+        max-width: 300px;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .user{
+        margin-top: -20px;
+        margin-left: -50%;
+    }
+
+    .adress{
+        margin-top: -122.5px;
+    }
+
+    .email{
+        margin-left: -50%;
+        margin-top: 67px;
+        padding-bottom: 40px;
+    }
+
+    .izgradnja{
+        margin-left: 50%;
+        margin-top: -177px;
+    }
+
+    .user img{
+        width: 60px;
+    }
+
+    .adress img{
+        width: 60px;
+    }
+
+    .email img{
+        width: 60px;
+    }
+
+    .izgradnja img{
+        width: 60px;
+        margin-top: -5px ;
+        margin-bottom: 5px;
+    }
+
+    .galerija{
+        font-size: 44px;
+    }
+
+    .socials::before{
+        top: 550px;
+    }
+
+  
+}
